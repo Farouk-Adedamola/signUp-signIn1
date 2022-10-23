@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #55c57a;
+}
+
+.container {
+  /* display: grid;
+  place-items: center;
+  transform: translateY(100%); */
+  /* grid-template-columns: 1fr; */
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin: 4rem auto;
+}
+
+.header-text {
+  font-size: 2.5rem;
+}
+
+.underline {
+  align-self: start;
+  background: #071e55;
+  height: 0.4rem;
+  width: 4rem;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+  /* transform: translateY(100%); */
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.form form .input {
+  padding: 1rem;
+  width: 85vw;
+  border: none;
+  margin: 1rem auto;
+  background-color: #55c57a;
+  border-bottom: 5px solid #071e55;
+  border-radius: 5px;
+  outline: none;
+  color: #071e55;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+form input[type="password"] {
+  background-color: #55c57a;
+  color: #071e55;
+}
+
+form .input:focus {
+  outline: 0;
+  transition: all 0.6s;
+  /* background-color: transparent; */
+  border-bottom: 5px solid #fff;
+}
+
+.signin-btn {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.signin-btn button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #212529;
+  margin-bottom: 1.2rem;
+  transition: all 0.5s;
+}
+
+.signin-btn button:hover {
+  background-color: #212121;
+}
+.last-text {
+  font-size: 1.3rem;
+  color: #071e55;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.signup-btn {
+  border: none;
+  color: #ff4500;
+  padding: 0.6rem;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.footer {
+  position: absolute;
+  top: 83%;
+  background: #071e55;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.foot li a {
+  font-size: 0.9rem;
+  color: #f5f7fc;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.foot li a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.foot {
+  list-style: none;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
+.footer p {
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #28b485;
+  font-weight: 700;
+}
