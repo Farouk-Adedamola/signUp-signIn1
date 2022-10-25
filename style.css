@@ -30,6 +30,12 @@ body {
   margin-left: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .quick {
+    display: none;
+  }
+}
+
 .form {
   display: grid;
   place-items: center;
@@ -153,7 +159,6 @@ form .input:focus {
 .footer p {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
-  /* font-size: 1.4rem; */
   color: #28b485;
   font-weight: 700;
 }
@@ -164,4 +169,77 @@ form .input:focus {
 
 .footer p:nth-child(3) {
   font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-top: 0;
+    border: 1px solid red;
+
+    height: 100vh;
+  }
+
+  .head-container {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .form form .input {
+    width: auto;
+  }
+
+  .line {
+    height: 80vh;
+    position: absolute;
+    margin-bottom: 2rem;
+    top: 0;
+    border-right: 5px solid #fff;
+    left: 50vw;
+  }
+
+  .head-wrapper {
+    position: relative;
+    top: -5rem;
+  }
+
+  .quick {
+    margin-top: 5rem;
+  }
+
+  .things label {
+    font-size: 2rem;
+    color: #071e55;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+
+  .things ul {
+    list-style: none;
+    line-height: 3rem;
+  }
+
+  .things ul li {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #212529;
+  }
+
+  .things ul li i {
+    color: #071e55;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
 }
