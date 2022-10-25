@@ -5,13 +5,6 @@ body {
   background: #55c57a;
 }
 
-.container {
-  /* display: grid;
-  place-items: center;
-  transform: translateY(100%); */
-  /* grid-template-columns: 1fr; */
-}
-
 .head-container {
   display: flex;
   flex-direction: column;
@@ -40,7 +33,6 @@ body {
 .form {
   display: grid;
   place-items: center;
-  /* transform: translateY(100%); */
   margin-top: 2rem;
 }
 
@@ -72,7 +64,6 @@ form input[type="password"] {
 form .input:focus {
   outline: 0;
   transition: all 0.6s;
-  /* background-color: transparent; */
   border-bottom: 5px solid #fff;
 }
 
@@ -115,39 +106,62 @@ form .input:focus {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
   position: absolute;
-  top: 83%;
+  top: 88%;
   background: #071e55;
   margin-bottom: 0;
   width: 100%;
 }
 
-.foot li a {
-  font-size: 0.9rem;
-  color: #f5f7fc;
-  text-decoration: none;
-  margin-right: 1rem;
-}
-
-.foot li a:hover {
-  font-weight: 800;
-  text-decoration: underline;
+@media screen and (max-width: 300px) {
+  .signin-btn button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .foot {
+    margin-left: 1rem;
+  }
 }
 
 .foot {
+  width: 95vw;
   list-style: none;
-  padding: 2rem;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.suport p {
+  font-size: 0.9rem;
+}
+.foot li a {
+  color: #f5f7fc;
+  text-decoration: none;
+  transition: all 0.6s;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-variant: small-caps;
 }
 
 .footer p {
-  padding: 1rem;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   color: #28b485;
   font-weight: 700;
+}
+
+.footer p:nth-child(2) {
+  font-size: 1rem;
+}
+
+.footer p:nth-child(3) {
+  font-size: 1.4rem;
 }
